@@ -15,7 +15,7 @@ Konieczność użycia modułu random.
 7. Użytkowniki wygrywa w momencie kiedy odpowie na wszystkie pytania, przegrywa kiedy straci wszystkie szanse
 8. Na koniec gry pokazuje się tablica wyników 
 9. Rundy bonusowe będzie to mnożnik punktów który trafia się w losowych momentach komputer losuje liczby z przedziału 0-100 w zależności jaka liczba wypadnie taki bonus przypadnie dla użytkownika., o rundzie losowej użytkownik będzie infomrowany razem z informacją o mnożniku punktów w danej rundzie.
-    a) 2x - liczby w przedziale 10-20
-    b) 3x - liczby w przedziale 50-55
-    c) 4x - liczba w przedziale 70-72
+    a) 2x - liczby w przedziale 10-30
+    b) 3x - liczby w przedziale 50-60
+    c) 4x - liczba w przedziale 70-75
     d) 5x - liczba  88
