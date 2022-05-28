@@ -4,7 +4,7 @@ Stwórz grę, która zawiera pytania z wiedzy ogólnej (Trivial pursuit)
 Konieczność użycia modułu random.
 
 1. Wszystkie pytania będą umieszczone w słowniku
-2. Interfejs pokazuje użytkownikowi ilość dostępnych pytań.
+2. Na początku gry kompyter pokazuje użytkownikowi ilość dostępnych pytań.
 3. Użytkownik dostaje informację jaki poziom trudności wybiera (nowicjusz, normlany, mistrz)
 4. W zależności od poziomu użytkownik ma dostępną ilość szans, które odejmują się w przypadku złej odpowiedzi na pytanie.
     a) nowisjusz - 10 szans
