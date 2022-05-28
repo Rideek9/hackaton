@@ -11,9 +11,10 @@ Konieczność użycia modułu random.
     b) normalny - 5 szansz
     c) mistrz - 3 szanse
 5. Komputer losuje pytanie i prosi użytkownika o odpowiedź jeśli odpowiedź jest poprawna użytkownik zyskuje 10 pkt jeśli odpowiedź jest zła użytkownik traci swoją szansę.
-6. Użytkowniki wygrywa w momencie kiedy odpowie na wszystkie pytania, przegrywa kiedy straci wszystkie szanse
-7. Na koniec gry pokazuje się tablica wyników 
-8. Rundy bonusowe będzie to mnożnik punktów który trafia się w losowych momentach komputer losuje liczby z przedziału 0-100 w zależności jaka liczba wypadnie taki bonus przypadnie dla użytkownika., o rundzie losowej użytkownik będzie infomrowany razem z informacją o mnożniku punktów w danej rundzie.
+6. Program bierze pod uwagę możliwe błędy użytkownika czyli wielkość liter, białe znaki - i konwertuje wszystko na jeden typ tekstowy
+7. Użytkowniki wygrywa w momencie kiedy odpowie na wszystkie pytania, przegrywa kiedy straci wszystkie szanse
+8. Na koniec gry pokazuje się tablica wyników 
+9. Rundy bonusowe będzie to mnożnik punktów który trafia się w losowych momentach komputer losuje liczby z przedziału 0-100 w zależności jaka liczba wypadnie taki bonus przypadnie dla użytkownika., o rundzie losowej użytkownik będzie infomrowany razem z informacją o mnożniku punktów w danej rundzie.
     a) 2x - liczby w przedziale 10-20
     b) 3x - liczby w przedziale 50-55
     c) 4x - liczba w przedziale 70-72
