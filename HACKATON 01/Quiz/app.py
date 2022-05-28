@@ -9,8 +9,10 @@ questions = {
     'Jaka jest stolica Portugalii?':'Lizbona'
 }
 # all variables
-start_game = 0
+# start_game = 0
+start_rounds = 0
 user_round = 0
+user_points = 0
 
 # function that selects and return question
 def choise_question():
@@ -19,10 +21,11 @@ def choise_question():
     return question
 
 def game_start(game):
-    if game == 0 :
+    if game == 0:
         level_game = user_level()
         numb = number_user_arremps(level_game)
         user_round = numb
+        start_rounds = numb
         start_game = 1
         return user_round, start_game
 
@@ -35,6 +38,8 @@ def number_user_arremps(level):
     for key, value in round_list.items():
         if level == key:
             print(f"Masz {value} prób ")
+            print(f"Całkowita ilość dostępnych pytań to: {len(questions.keys())}")
+            print('Zaczynamy:)\n')
             return value
 
 
@@ -55,18 +60,48 @@ def user_level():
             continue
         break
 
+def game_question():
+    question = choise_question()
+    for keys, value in questions.items():
+        if question == keys:
+            return question, value
+def game():
+    print('\nPytanie')
+    question_and_anwser = list(game_question())
+    question = question_and_anwser[0]
+    anwser = question_and_anwser[1]
+    print(question)
+    odp = input("Poprawna odpowiedź to?:\n--->")
+    if odp.lower().strip() == anwser.lower():
+        print("dobra odpowiedź")
+        del questions[question]
+        return 10
+    else:
+        del questions[question]
+        print('zła odpowiedź')
+        return 1
+
+
+
+def end_game(points,start,end):
+    if len(questions.keys()) == 0:
+        print('Odpowiedziałeś na wszystkie pytania')
+        print(f'Zdobyłeś {user_points} ')
+        print(f'Straciłeś {start_rounds - user_round} prób zostało CI jeszcz {user_round}')
+        exit()
+
 
 def main():
-    # module start game
+    # module start game - start the game and add round for user
     start_game =0
     start_start = game_start(start_game)
     list_start = list(start_start)
-    start_game = list_start[1]
-    user_round = list_start[0]
+
+    while True:
+        end_game(user_points,start_rounds,user_round)
+        game()
 
 
 
-    # question = choise_question()
-    # print(question)
 
 main()
